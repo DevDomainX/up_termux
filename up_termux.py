@@ -1,25 +1,23 @@
-#!usr/bin/env python3
-from colorama import init, Fore, Style, Back
-init()
+#!/usr/bin/env python3
 import os
 from time import sleep
 
-print(Fore.YELLOW+Style.BRIGHT+"""
+print("""\033[32m
 
 \t\t░▀█▀░█▀▀░█▀▄░█▄█░█░█░█░█
 \t\t░░█░░█▀▀░█▀▄░█░█░█░█░▄▀▄
 \t\t░░▀░░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀                     
 
 \t  ▁ ▂ ▄ ▅ ▆ ▇ █ packages █ ▇ ▆ ▅ ▄ ▂ ▁
-\n\n""")
+\n\n\033[39m""")
 
-op = input(Fore.WHITE+Style.BRIGHT+"Desea instalar los paquetes de necesarios para iniciar el uso de Termux? (s/n): ")
+op = input("\033[33mDesea instalar los paquetes de necesarios para iniciar el uso de \033[32mTermux? (s/n): \033[39m")
 def sub():
-	print(Fore.CYAN+Style.BRIGHT+"Sigueme en mi canal para mas contenido\n\n")
-	os.system("open-termux https://www.tiktok.com/@devdomainx?_t=8j1l0nNmIpK&_r=1")
+	print("\Sigueme en mi canal para mas contenido\n\n")
+	os.system("termux-open https://www.tiktok.com/@devdomainx?_t=8j1l0nNmIpK&_r=1")
 
 if "s".lower() in op:
-	print(Fore.YELLOW+Style.BRIGHT+"\nCargando ...")
+	print("\033[32m\nCargando ...")
 	sleep(5)
 	print("\n\nInstalando paquetes obligatorios".upper())
 	print("\nCargando ...")
