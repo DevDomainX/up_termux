@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os
 from time import sleep
-
+os.system("clear")
 print("""\033[32m
 
 \t\t░▀█▀░█▀▀░█▀▄░█▄█░█░█░█░█
