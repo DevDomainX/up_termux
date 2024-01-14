@@ -1,3 +1,4 @@
+#!usr/bin/env python3
 from colorama import init, Fore, Style, Back
 init()
 import os
